@@ -1,0 +1,246 @@
+/*General*/
+:root {
+  --color1:#e5e5e5;
+  --color2:#f0f0f0;
+  --color3:#009165E1;
+  --color4:#3d3d3d;
+  --color5:#9f48ff;
+  --font1:futura;
+  --font2:futura;
+}
+h1, h2, h3, h4, h5 {font-family:var(--font1);}
+p {font-family:var(--font2);}
+a {color:var(--color2);}
+a:hover {
+  background-color:var(--color2);
+  color:var(--color3);
+  width:30%;
+  text-shadow:none;}
+
+/*Header*/
+header {
+  position:fixed;
+  padding:1.2%;
+  font-size:1.2em;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  color:var(--color2);
+  background-color:var(--color3);
+  width:100%;
+  height:30px;
+  top:0;
+  left:0;
+  box-shadow: 0 0 10px #00000064;
+  text-shadow:0 2px 5px #00000064;
+  z-index:1;
+}
+#logo {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:200px;
+  height:35px;
+  position:relative;
+  top:5px;
+}
+#header-img {height:250%;}
+#nav-bar{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-around;
+  font-size:1em;
+  width:25%;
+  text-align:center;
+  padding:25px;
+}
+
+/*Body*/
+body{
+  text-align:center;  
+  color:var(--color4);
+  background-color:var(--color1);
+  background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2016%2F01%2F161383-space-universe-TylerCreatesWorlds.jpg&f=1&nofb=1");
+  background-attachment: fixed;
+}
+#content{  
+  width:100%;
+  margin:5% 10% 0% 0%;
+  background-color:white;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  opacity:0.88;
+  border-radius:0.5em 0.5em 0.5em 0.5em;
+  box-shadow: 0 0 10px #00000064;
+}
+#content-sections{
+  padding:2%;
+  width:100%;
+  background-color:var(--color2);
+  margin:0px 16px;
+}
+#video-section, #email-query, #item-boxes {padding:0% 0% 1% 0%;}
+#video{
+  width:800px;
+  height:450px;
+}
+#email{width:50%; height:30px;}
+#submit{
+  width:200px;
+  height:30px;
+  background-color:var(--color3);
+  color:var(--color2);
+  border:none;
+  border-radius:10em;
+}
+#submit:hover{background-color:var(--color5);}
+#item-boxes{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+#boxes {
+  width:900px;
+  height:400px;
+  display:flex;
+  justify-content:space-around;
+}
+#box1, #box2, #box3 {  
+  background-color:var(--color2);
+  width:30%;
+  border-style:solid;
+  border-color:gray;
+  border-width:1px;
+  border-radius:0.5em;
+}
+.box-title{
+  margin:5px 5px;
+  padding:0.001em;
+  background-color:var(--color3);
+  color:var(--color2);
+  border-radius:0.5em;
+}
+.product-paragraph{
+  margin:0px 30px 20px 30px;
+  font-size:16px;
+}
+.buy-button{
+  width:50%;
+  background-color:var(--color2);
+  border:solid;
+  border-radius:0.5em;
+  color:var(--color1);
+}
+.buy-button:hover{
+  background-color:var(--color5);
+}
+#ad-sections{
+  width:10%;
+  padding:1%;
+  background-color:var(--color2);
+  margin:0px 16px;
+}
+.ad-img1{width:100%; max-width:100px;}
+
+/*Footer*/
+footer {
+  text-align:right;
+  font-size:1.5em;
+  color:var(--color2);
+  height:30px;
+  padding:10px;
+  
+  text-shadow:0 2px 5px #00000064;
+}
+
+/*Media Queries*/
+@media(max-width:1400px){  
+  header {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:1.1em;
+ }
+  #header-img {
+    height:200%;
+  } 
+}
+@media(min-width:901px) and (max-width:1200px){
+  #header{height:40px;}
+  #content{
+    align-items:center;
+    width:100%;
+    flex-direction:column;
+  }
+  #content-sections{
+    width:95%;
+    margin:8px 0px;
+  }
+  #ad-sections{
+    width:90%;
+    margin:8px 0px;
+  }
+  .ad-img1{width:50%;}
+}
+@media(max-width:900px){  
+  header {
+    margin:auto;
+    position:static;
+    display: flex;
+    width:90%;
+    height:auto;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    font-size:1.2em;    
+    padding:5%;    
+  }
+  #logo {
+    height:2em;
+    position:static;    
+    padding:5%;
+  }
+  #header-img {
+    width:100px;
+    height:auto;
+  }
+  #email{width:75%;}
+  #nav-bar{
+    display: flex;
+    width:100%;
+    flex-direction:row;
+    justify-content:space-around;
+    text-align:center;
+    font-size:1em;
+    padding:0px;
+  }
+  #video{
+    width:284px;
+    height:160px;
+  }
+  #boxes {
+    width:300px;
+    height:1300px;
+    flex-direction:column;
+  }
+  #box1, #box2, #box3 {  
+    width:100%;
+    height:30%;
+  }
+  #content{
+    align-items:center;
+    width:100%;
+    flex-direction:column;
+  }
+  #content-sections{
+    width:95%;
+    margin:8px 0px;
+  }
+  #ad-sections{
+    width:90%;
+    margin:8px 0px;
+  }
+  .ad-img1{width:50%;}
+}
