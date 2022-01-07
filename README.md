@@ -13,6 +13,6 @@ Abra o arquivo *index.html* dentro da pasta *pt-br* em seu navegador.
 ## Usage (ENG)
 Open the *index.html* file in the *pt-br* folder on your browser.
 
-![image](https://user-images.githubusercontent.com/96557379/148391079-c178d99d-da08-4bb4-ae48-a5c5f159f08b.png)
+![image](https://user-images.githubusercontent.com/96557379/148611017-73ee2ccb-f268-4221-a3b6-e688f1527935.png)
 
 A Pen created on CodePen.io. Original URL: [https://codepen.io/luiz5252/pen/bGoKWYg](https://codepen.io/luiz5252/pen/bGoKWYg).
