@@ -7,10 +7,11 @@
   --color5:#9f48ff;
   --font1:futura;
   --font2:futura;
+  scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5 {font-family:var(--font1);}
 p {font-family:var(--font2);}
-a {color:var(--color2);}
+a {color:var(--color2);text-decoration:none;}
 a:hover {
   background-color:var(--color2);
   color:var(--color3);
